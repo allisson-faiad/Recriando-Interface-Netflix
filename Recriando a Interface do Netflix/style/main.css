@@ -18,16 +18,26 @@ body{
     color: white;
 }
 header .container{
+    position: fixed;
+    top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;   
-    height: 10vh; 
+    height: 7vh; 
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.027) 90%);
+    margin:0 50px;
+    z-index: 20;
+}
+header .container .menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;   
+
 }
 header .logo{
-    color: var(--vermelho);
-    font-family: 'Arial Black', Times;
-    font-size: 45px;
+   width:8%;
+   margin-right: 30px;
 }
 
 header nav{
@@ -35,13 +45,22 @@ header nav{
 }
 header nav a{
     text-decoration: none;
-    color:#aaa;
+    color:rgb(196, 196, 196);
     margin-right: 20px;
 }
 
 header nav a:hover{
    color:white;
 }
+
+header .icons{
+    display: flex;
+    color:white;
+    width: 20%;
+ }
+ header .icons i{
+    margin-right: 20px;
+ }
 
 /* Filme Principal */
 
@@ -50,7 +69,7 @@ header nav a:hover{
     background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) 100%);
     
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-size: cover;
 
     display: flex;
@@ -62,14 +81,25 @@ header nav a:hover{
 }
 
 .filme-principal:hover {
-    height: 70vh;
-    transition: 1s ease-in-out;
+   
 }
-.filme{
+.filme-principal:hover .titulo{
+    
+}
+.filme-principal:hover .descricao,.filme-principal:hover .botao {
+
+}
+.filme-principal .c-filme{
     width: 100%;
     height: 100%;
     z-index:1 !important;
 }
+.filme-principal .c-filme .filme{
+    width: 100%;
+    height: 100%;
+}
+
+
 .filme-principal .container{
     position: absolute;
     z-index:5 !important;
@@ -117,7 +147,6 @@ header nav a:hover{
 }
 
 .filme-principal .container{
-    width: 70%;
 }
 
 .box-filme{
@@ -128,4 +157,8 @@ header nav a:hover{
 
 .carousel-filmes{
     margin-top: 8px;
+}
+
+.owl-nav, .owl-dots{
+    display: none;
 }

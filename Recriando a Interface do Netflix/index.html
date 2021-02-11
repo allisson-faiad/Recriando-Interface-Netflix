@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/responsive.css">
-
+    <link rel="shortcut icon" href="./img/netflix.ico" type="image/x-icon">
     <!-- owl css-->
     <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <title>Netflix Clone</title>
-    <script>
+
+    <!-- <script>
         // 2. This code loads the IFrame Player API code asynchronously.
         var tag = document.createElement('script');
   
@@ -54,34 +56,46 @@
         function stopVideo() {
           player.stopVideo();
         }
-      </script>
+      </script> -->
+    <script>
+
+
+    </script>
 </head>
 
 <body>
+
     <header>
         <div class="container">
-
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="http://">Início</a>
-                <a href="http://">Séries</a>
-                <a href="http://">Filmes</a>
-                <a href="http://">Documentário</a>
-            </nav>
+            <div class="menu">
+                <img src="./img/netflix-logo.png" class="logo">
+                <nav>
+                    <a href="http://">Início</a>
+                    <a href="http://">Séries</a>
+                    <a href="http://">Filmes</a>
+                    <a href="http://">Documentário</a>
+                </nav>
+            </div>
+            <div class="icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-gift"></i>
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-user-circle"></i>
+            </div>
         </div>
     </header>
     <main>
 
-        
-        <div class="filme-principal" >
-<div class="filme" id="player" onmouseover="onPlayerReady()">
+        <div class="filme-principal">
+            <!-- <div class="filme" id="player" onmouseover="onPlayerReady()"> -->
+            <div class="c-filme">
+                <video poster="./img/capa-house.jpg" src="./img/house_of_cards.mp4" class="filme" id="video" full loop
+                    tabindex="0">
+                </video>
+            </div>
 
-</div>
-           
-           
-            
             <div class="container">
-                
+
                 <h3 class="titulo">HOUSE OF CARDS</h3>
                 <p class="descricao">Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste
                     drama vencedor do Emmy e do Globo de Ouro.</p>
@@ -115,8 +129,9 @@
     <script src="https://kit.fontawesome.com/69a68410cd.js" crossorigin="anonymous"></script>
     <script src="./js/owl/jquery.min.js"></script>
     <script src="./js/owl/owl.carousel.min.js"></script>
+
     <script src="./js/setup.js"></script>
-   
+
 </body>
 
 </html>
